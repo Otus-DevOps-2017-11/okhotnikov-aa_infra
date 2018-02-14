@@ -3,4 +3,4 @@ set -e
 
 # install ruby
 apt update
-apt install -y ruby-bundler build-essential
+apt install -y ruby-full ruby-bundler build-essential
