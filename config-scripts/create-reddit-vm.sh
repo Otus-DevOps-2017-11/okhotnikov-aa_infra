@@ -1,9 +1,1 @@
-gcloud compute instances create instance-from-gcloud-cli \
-  --boot-disk-size=10GB \
-  --image=ubuntu-1604-xenial-v20170815a \
-  --image-project=ubuntu-os-cloud \
-  --machine-type=f1-micro \
-  --tags" \
-  --preemptible \
-  --restart-on-failure \
-  --zone=europe-west4-b
+gcloud beta compute --project "infra-194820" instances create "reddit-full" --zone "europe-west4-b" --machine-type "f1-micro"  --tags "puma-server","http-server","https-server" --image "reddit-full-1518632499" --image-project "infra-194820" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "reddit-full"
