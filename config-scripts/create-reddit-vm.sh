@@ -1,0 +1,1 @@
+gcloud beta compute --project "infra-194820" instances create "reddit-full" --zone "europe-west4-b" --machine-type "f1-micro"  --tags "puma-server","http-server","https-server" --image "reddit-full-1518632499" --image-project "infra-194820" --boot-disk-size "10" --boot-disk-type "pd-standard"
